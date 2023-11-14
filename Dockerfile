@@ -24,15 +24,15 @@ RUN apt update && apt install -y $PACKAGES && \
 
 FROM python:3.10.13-slim
 
-LABEL de.uni-hamburg.aai.eis1600.image.authors="Lisa Mischer <mischer.lisa@gmail.com>"
-LABEL de.uni-hamburg.aai.eis1600.image.vendor="EIS1600 Project"
-LABEL de.uni-hamburg.aai.eis1600.image.version=0.1
-LABEL de.uni-hamburg.aai.eis1600.image.licence="MIT License"
-LABEL de.uni-hamburg.aai.eis1600.image.title="eis1600-pkg"
-LABEL de.uni-hamburg.aai.eis1600.image.description="Dockerized version of Pypi package 'eis1600-pkg'"
-LABEL de.uni-hamburg.aai.eis1600.image.base.name="python:3.10.13-slim"
-LABEL de.uni-hamburg.aai.eis1600.image.url"https://github.com/EIS1600/docker-eis1600-pkg"
-LABEL de.uni-hamburg.aai.eis1600.image.source"https://github.com/EIS1600/docker-eis1600-pkg"
+LABEL org.opencontainers.image.authors="Lisa Mischer <mischer.lisa@gmail.com>"
+LABEL org.opencontainers.image.vendor="EIS1600 Project"
+LABEL org.opencontainers.image.image.version=1.1.1
+LABEL org.opencontainers.image.licence="MIT License"
+LABEL org.opencontainers.image.title="eis1600-pkg"
+LABEL org.opencontainers.image.description="Dockerized version of Pypi package 'eis1600-pkg'"
+LABEL org.opencontainers.image.base.name="python:3.10.13-slim"
+LABEL org.opencontainers.image.url"https://github.com/EIS1600/docker-eis1600-pkg"
+LABEL org.opencontainers.image.source"https://github.com/EIS1600/docker-eis1600-pkg"
 
 LABEL de.uni-hamburg.aai.eis1600.website="https://eis1600.aai.uni-hamburg.de/"
 LABEL de.uni-hamburg.aai.eis1600.pypi="https://pypi.org/project/eis1600/"
